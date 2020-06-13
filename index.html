@@ -66,6 +66,16 @@
           </style>
     
 	  <script>
+		 
+	document.addEventListener("keydown", event => {
+		if(event.key==="ArrowLeft"){restart();}
+       });
+		  
+        function restart(){
+		reload();
+	}
+	
+	
 	var character=document.getElementById("character");
 	var block=document.getElementById("block");
 	var score=0;

@@ -67,7 +67,13 @@
 	  <script>
 	var character=document.getElementById("character");
 	var block=document.getElementById("block");
+	var infin=3;
 	var score=0;
+		  
+		  
+	if(infin==3){
+		score++;
+	}
 
 	function jump() {
 
@@ -75,7 +81,7 @@
 		setTimeout(function(){
 			character.classList.remove("animate");
 		},600);
-		score++;
+		
 	}
 
 	var checkDead=setInterval(function(){
